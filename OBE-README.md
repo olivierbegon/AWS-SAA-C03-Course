@@ -29,3 +29,24 @@ Default VPC comes with default IG, NACL, SG.
 Can be removed and recreated
 
 Subnet assigns public IPs
+
+#### 1.2.5.5. AMI (Server Image)
+
+AMI can be used to create an instance or can be created from an instance.
+AMIs in one region are not available from other regions.
+
+Contains:
+
+- Permissions: controls which accounts can and can't use the AMI.
+
+  - Public - Anyone can launch it.
+
+  - Owner - Implicit allow, only the owner can use it to spin up new instances
+
+  - Explicit - Owner grants access to AMI for specific AWS accounts
+
+- Root Volume: contains the **Boot Volume**
+
+- Block Device Mapping: links the volumes that the AMI has and
+how they're presented to the operating system. Determines which volume is a
+boot volume and which volume is a data volume.
