@@ -4,6 +4,8 @@
 - Max 2 Access Key per user
 
 
+## 1.2. AWS-Fundamentals
+
 1.2.4. AWS Default VPC
 VPC is a virtual network inside of AWS. A VPC is within 1 account and 1 region which makes it regionally resilient. A VPC is private and isolated until decided otherwise.
 
